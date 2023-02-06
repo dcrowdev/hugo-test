@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 export default async function main() {
     console.log('Hello, world!');
 
@@ -22,13 +23,14 @@ export default async function main() {
             name: fullName,
             company,
             email,
-            phone,
-            content: 'this is a test'
+            phone: `+${phone}`,
+            content: 'this is a test',
+            referrer: window.location.href
         }).then(resp => {
             console.log(resp)
             console.log('Success!');
             // redirect to success page
-            window.location.href = '#success'
+            window.location.replace('/contact-success');
         }).catch(err => `Error ${err.message}`);
     });
 }
