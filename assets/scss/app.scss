@@ -175,6 +175,9 @@ header {
 }
 
 #main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 2rem;
     flex-basis: 0;
     flex-grow: 1;

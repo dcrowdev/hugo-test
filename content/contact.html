@@ -3,12 +3,31 @@ title: Contact US
 id: contact
 ---
 
-<div class="container">
-    <h1>Contact Us</h1>
+<div class="container-fluid mh-50 d-flex row align-items-center justify-content-center">
+  <h1 class="mb-2 text-center">Contact Us!</h1>
 
-    <form id="contact-form">
-        <!-- here be contact info fields -->
-
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+  <form id="contact-form" class="row g-3">
+    <!-- here be contact info fields -->
+    <div class="col-md-6">
+        <label for="firstname" class="form-label">First Name</label>
+        <input id="firstname" type="text" class="form-control" placeholder="First name" aria-label="First name">
+      </div>
+      <div class="col-md-6">
+        <label for="lastname" class="form-label">Last Name</label>
+        <input id="lastname" type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+      </div>
+    <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPhonenumber4" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="inputPhonenumber4" placeholder="Ex. 555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+      </div>
+      <div class="col-12">
+        <label for="orgname" class="form-label">Organization Name</label>
+        <input type="text" class="form-control" id="orgname" placeholder="Your Organization Name">
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </div>
